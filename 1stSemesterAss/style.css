@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 380px;
+    width: 380px;
+    background-color: #242530;
+    padding: 8px;
+    margin: 0px;
+}
+
+input {
+    width: 350px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid #3A3F77;
+    padding: 10px;
+    margin: 2px;
+    background-color: #3A3F77;
+    color: #ffffff;
+}
+
+#digits {
+    margin: 0;
+    padding: 15px;
+    font-size: 25px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+.nums   {
+    border-radius: 40%;
+    background-color: #404258;
+    color: white;
+    font-size: 25px;
+    border: 0;
+}
+
+.operator {
+    border-radius: 50%;
+    background-color: #F49D1A;
+    color: white;
+    font-size: 25px;
+    border: 0;
+    
+}
+
+
+.equal {
+    border-radius: 40%;
+    background-color: #B2B2B2;
+    font-size: 25px;
+    border: 0;
+    grid-column: span 2;
+        
+}
+button:hover {
+    background-color: grey;
+}
+
+
+
+/* Media Queries for mobile/desktop */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input {
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .nums, .operator, .equal {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+}
